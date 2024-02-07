@@ -1,18 +1,30 @@
 #include <iostream>
-#include <stdlib.h>
-#include <time.h>
 
 using namespace std;
 
 int main(){
 
-    float num;
+    int eleccion, rnd;
+    char res;
 
-    cout<<"0 para Cara, 1 para Sello"<<endl;
-
-    num = rand()%2;
-
-    cout<<"Le tocó: "<<num;
+    cout<<"Elije una: [1] Cara [2] Sello"<<endl;
+    cin>>eleccion;
+    
+    if (eleccion < 1 || eleccion > 2) {
+      cout << "Elección no válida. Intente de nuevo." <<endl;
+    
+	return 0;
+    }
+	
+	rnd = rand() % 2;
+	
+	if (eleccion == 1) {
+      res = rnd ? 'S' : 'C';
+    } else {
+      res = rnd ? 'C' : 'S';
+    }
+    
+    cout << "Le tocó: " <<res<<endl;
 
     return 0;
 }
