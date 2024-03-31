@@ -3,15 +3,18 @@
 using namespace std;
 
 int main() {
-  int suma = 0;
-  int cuenta = 1;
+  //Declaracion de variables
+  int suma=0;
+  int cuenta=1;
 
-  while (cuenta <= 100) {
+  //Ciclo para sumar los números enteros del 1 al 100
+  while(cuenta <= 100){
     suma += cuenta;
     cuenta++;
   }
 
-  cout << "La suma de los números enteros del 1 al 100 es: "<<suma<<endl;
+  //Impresion de resultado
+  cout<<"La suma de los números enteros del 1 al 100 es: "<<suma<<endl;
 
   return 0;
 }
