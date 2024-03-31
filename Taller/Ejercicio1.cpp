@@ -4,7 +4,9 @@ using namespace std;
 
 int main(){
 
-    double deuda, descuento, deudaTotal;
+    double deuda; 
+    double descuento = 0; 
+    double deudaTotal = 0;
 
     cout<<"Ingrese la deuda a analizar: ";
     cin>>deuda;
@@ -29,7 +31,7 @@ int main(){
         deudaTotal = deuda - descuento;
     }
 
-    cout<<"El descuento a realizar de su deuda es de: "<<descuento<<"y su deuda total es de: "<<deudaTotal;
+    cout<<"El descuento a realizar de su deuda es de: "<<descuento<<" y su deuda total es de: "<<deudaTotal;
 
     return 0;
-    }
+}
