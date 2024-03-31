@@ -4,13 +4,16 @@ using namespace std;
 
 int main(){
 
+    //Declaracion de variables
     double deuda; 
     double descuento = 0; 
     double deudaTotal = 0;
 
+    //Ingreso de datos
     cout<<"Ingrese la deuda a analizar: ";
     cin>>deuda;
 
+    //Condicional para determinar el descuento a realizar
     if(deuda>60000 && deuda<150000){
 
         descuento = deuda * 0.20;
@@ -31,6 +34,7 @@ int main(){
         deudaTotal = deuda - descuento;
     }
 
+    //Imprimir resultados
     cout<<"El descuento a realizar de su deuda es de: "<<descuento<<" y su deuda total es de: "<<deudaTotal;
 
     return 0;
