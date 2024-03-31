@@ -8,12 +8,12 @@ int main(){
     double valorEquipo, descuento, valorNeto;
 
     cout<<"Ingrese el tipo de plan que tiene (0 para prepago, 1 para postpago): "<<endl;
-    cin>>plan;
+        cin>>plan;
 
     switch(plan){
         case 0:
             cout<<"Ingrese el valor del equipo a comprar: "<<endl;
-            cin>>valorEquipo;
+                cin>>valorEquipo;
             if(valorEquipo>100000 && valorEquipo<900000){
                 descuento = valorEquipo * 0.10;
                 valorNeto = valorEquipo - descuento;
@@ -29,7 +29,7 @@ int main(){
           break;
         case 1:
             cout<<"Ingrese el valor del equipo a comprar: "<<endl;
-            cin>>valorEquipo;
+                cin>>valorEquipo;
             if(valorEquipo<500000){
                 descuento = valorEquipo * 0.15;
                 valorNeto = valorEquipo - descuento;
@@ -48,8 +48,8 @@ int main(){
             }
           break;
         default:
-        cout<<"Error. Plan no encontrado, intentelo de nuevo.";
-        system("pause");
+            cout<<"Error. Plan no encontrado, intentelo de nuevo.";
+          break;
     }
     return 0;
 }
